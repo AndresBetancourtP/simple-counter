@@ -2,7 +2,6 @@ import { string } from "prop-types";
 import React from "react";
 import { useState, useEffect } from "react";
 
-
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
