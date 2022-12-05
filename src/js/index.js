@@ -6,7 +6,13 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Layout from "./Layout.jsx"
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let vari = 0;
+
+setInterval(()=>{
+    //render your react application
+    ReactDOM.render(<Layout incr={vari} />, document.querySelector("#app"));
+    vari ++;
+    
+},1000);
